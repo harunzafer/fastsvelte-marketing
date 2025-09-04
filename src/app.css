@@ -1,0 +1,20 @@
+/* Root Styling */
+@import "./lib/styles/typography.css";
+@import "./lib/styles/tailwind.css";
+@import "./lib/styles/daisyui.css";
+
+/* Custom Declarations */
+@import "./lib/styles/core/animation.css";
+@import "./lib/styles/core/components.css";
+
+/* Page wise */
+@import "./lib/styles/pages/landing.css";
+
+/****  Plugins  ****/
+/* Animations */
+@plugin "tailwindcss-motion";
+
+/* Iconify (Lucide icons) */
+@plugin "@iconify/tailwind4" {
+    prefixes: lucide, hugeicons, ri;
+}
