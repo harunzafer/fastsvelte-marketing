@@ -41,11 +41,11 @@
 				target="_blank"
 			>
 				<div
-					class="flex items-center justify-center rounded-full border border-primary/10 bg-primary/10 px-1.5 py-0 text-xs font-medium text-primary dark:border-white/5 dark:bg-white/5 dark:text-white"
+					class="flex items-center justify-center rounded-full border border-primary/10 bg-primary/10 px-1.5 py-0 text-xs font-medium text-primary dark:border-primary/20 dark:bg-primary/20"
 				>
 					NEW
 				</div>
-				FastAPI + SvelteKit
+				FastAPI + Svelte 5
 			</a>
 			<div
 				class="mt-4 max-w-[1000px] transition-all duration-1000 starting:scale-125 starting:opacity-0 starting:blur-sm"

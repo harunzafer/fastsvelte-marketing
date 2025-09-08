@@ -53,26 +53,26 @@
 						></label>
 						<ul class="menu min-h-full w-80 bg-base-100 p-4 text-base-content">
 							<li>
-								<a href="/dashboards/ecommerce">Dashboard</a>
+								<a href="https://docs.fastsvelte.dev" target="_blank">Documentation</a>
 							</li>
 							<li>
-								<a href="/components">Components</a>
+								<a href="#pricing">Pricing</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 
-			<a href="/dashboards/ecommerce">
+			<a href="/">
 				<Logo />
 			</a>
 		</div>
 		<ul class="menu menu-horizontal hidden gap-2 px-0 lg:inline-flex">
 			<li>
-				<a href="/dashboards/ecommerce">Dashboard</a>
+				<a href="https://docs.fastsvelte.dev" target="_blank">Documentation</a>
 			</li>
 			<li>
-				<a href="/components">Components</a>
+				<a href="#pricing">Pricing</a>
 			</li>
 		</ul>
 		<div class="inline-flex items-center gap-3">
