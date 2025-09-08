@@ -11,7 +11,7 @@ const STRIPE_TEAM_PRICE_ID = env.STRIPE_TEAM_PRICE_ID || 'price_placeholder';
 const PUBLIC_APP_URL = env.PUBLIC_APP_URL || 'https://fastsvelte.dev';
 
 const stripe = new Stripe(STRIPE_SECRET_KEY, {
-	apiVersion: '2023-10-16'
+	apiVersion: '2024-06-20'
 });
 
 export const POST: RequestHandler = async ({ request }) => {
