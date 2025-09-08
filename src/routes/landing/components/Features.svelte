@@ -1,92 +1,114 @@
 <script lang="ts">
-    const features = [
-        {
-            icon: "lucide--layers",
-            title: "Framework Flexibility",
-            description: "Use across popular stacks with clean, adaptable structure for rapid prototyping",
-            iconClass: "text-blue-500 bg-blue-500/5",
-            cardClass: "hover:border-blue-500/40 hover:bg-blue-500/5",
-        },
-        {
-            icon: "lucide--monitor-dot",
-            title: "Dashboard View",
-            description: "Includes a polished admin layout with sections for stats, content, and user activity",
-            iconClass: "text-violet-500 bg-violet-500/5",
-            cardClass: "hover:border-violet-500/40 hover:bg-violet-500/5",
-        },
-        {
-            icon: "lucide--package",
-            title: "Design-Ready UI",
-            description: "Speed up design flow with pre-built elements like buttons, tables, and forms",
-            iconClass: "text-cyan-600 bg-cyan-600/5",
-            cardClass: "hover:border-cyan-600/40 hover:bg-cyan-600/5",
-        },
-        {
-            icon: "lucide--line-chart",
-            title: "Visual Chart Blocks",
-            description: "Sketch trends and metrics using built-in chart layouts for fast mockups",
-            iconClass: "text-fuchsia-500 bg-fuchsia-500/5",
-            cardClass: "hover:border-fuchsia-500/40 hover:bg-fuchsia-500/5",
-        },
-        {
-            icon: "lucide--wand-sparkles",
-            title: "LLM-Ready Support",
-            description: "Comes with prompt files for teams exploring text-generation workflows",
-            iconClass: "text-orange-400 bg-orange-500/5",
-            cardClass: "hover:border-orange-400/40 hover:bg-orange-400/5",
-        },
-        {
-            icon: "lucide--clock",
-            title: "Quick Start Setup",
-            description: "Well-structured layout helps teams kick off designs without starting from scratch",
-            iconClass: "text-teal-500 bg-teal-500/5",
-            cardClass: "hover:border-teal-500/40 hover:bg-teal-500/5",
-        },
-        {
-            icon: "lucide--monitor-smartphone",
-            title: "Adaptive by Design",
-            description:
-                "Built to look great on every device, with theme options that fit any brand or user preference",
-            iconClass: "text-blue-500 bg-blue-500/5",
-            cardClass: "hover:border-blue-500/40 hover:bg-blue-500/5",
-        },
-        {
-            icon: "lucide--pencil-line",
-            title: "Flexible Structure",
-            description: "Easy to tweak, rearrange, or build on top—ideal for teams that need room to grow",
-            iconClass: "text-violet-500 bg-violet-500/5",
-            cardClass: "hover:border-violet-500/40 hover:bg-violet-500/5",
-        },
-    ] as const;
+	const features = [
+		{
+			icon: 'lucide--key',
+			title: 'Complete Authentication',
+			description:
+				'Lucia-compliant auth with PostgreSQL. Email verification, password reset, session management, and role-based authorization - all built-in',
+			iconClass: 'text-blue-500 bg-blue-500/5',
+			cardClass: 'hover:border-blue-500/40 hover:bg-blue-500/5'
+		},
+		{
+			icon: 'lucide--credit-card',
+			title: 'Stripe Integration',
+			description:
+				'Full payment processing with webhook handling, subscription management, and billing automation',
+			iconClass: 'text-violet-500 bg-violet-500/5',
+			cardClass: 'hover:border-violet-500/40 hover:bg-violet-500/5'
+		},
+		{
+			icon: 'lucide--users',
+			title: 'Multi-Tenant Architecture',
+			description:
+				'Organizations, role-based permissions, team invitations - perfect for B2B and B2C SaaS',
+			iconClass: 'text-cyan-600 bg-cyan-600/5',
+			cardClass: 'hover:border-cyan-600/40 hover:bg-cyan-600/5'
+		},
+		{
+			icon: 'lucide--brain',
+			title: 'AI/ML Ready Python Backend',
+			description:
+				'FastAPI foundation perfect for integrating OpenAI, LangChain, ML models, and data processing',
+			iconClass: 'text-fuchsia-500 bg-fuchsia-500/5',
+			cardClass: 'hover:border-fuchsia-500/40 hover:bg-fuchsia-500/5'
+		},
+		{
+			icon: 'lucide--zap',
+			title: 'SPA Performance',
+			description:
+				'SvelteKit SPA with instant navigation, client-side routing, and superior developer experience',
+			iconClass: 'text-orange-400 bg-orange-500/5',
+			cardClass: 'hover:border-orange-400/40 hover:bg-orange-400/5'
+		},
+		{
+			icon: 'lucide--server',
+			title: 'Deploy Anywhere',
+			description:
+				'Docker-first containerization. Deploy to any VPS, cloud provider, or on-premise infrastructure',
+			iconClass: 'text-teal-500 bg-teal-500/5',
+			cardClass: 'hover:border-teal-500/40 hover:bg-teal-500/5'
+		},
+		{
+			icon: 'lucide--layers-3',
+			title: 'Clean Architecture',
+			description:
+				'Enterprise-grade 3-layer API → Service → Repository pattern with dependency injection and testing',
+			iconClass: 'text-blue-500 bg-blue-500/5',
+			cardClass: 'hover:border-blue-500/40 hover:bg-blue-500/5'
+		},
+		{
+			icon: 'lucide--palette',
+			title: 'Professional UI Components',
+			description:
+				'Beautiful admin dashboard with 50+ pre-built components, charts, tables, and responsive design patterns',
+			iconClass: 'text-violet-500 bg-violet-500/5',
+			cardClass: 'hover:border-violet-500/40 hover:bg-violet-500/5'
+		},
+		{
+			icon: 'lucide--bot',
+			title: 'AI-Optimized Codebase',
+			description:
+				'Clean project structure and comprehensive documentation make AI tools like Claude, Cursor, and GitHub Copilot incredibly efficient for development',
+			iconClass: 'text-emerald-500 bg-emerald-500/5',
+			cardClass: 'hover:border-emerald-500/40 hover:bg-emerald-500/5'
+		}
+	] as const;
 </script>
 
 <div class="container py-8 md:py-12 xl:py-16 2xl:py-24">
-    <div class="text-center">
-        <div class="inline-flex items-center rounded-box border border-indigo-500/10 bg-indigo-500/5 p-2">
-            <span class="iconify lucide--wand-2 size-5 text-indigo-600" />
-        </div>
-        <p id="fade-in" class="custom-fade-in mt-4 text-2xl font-semibold sm:text-3xl">Designed for Impact</p>
-        <p class="text-base-content/70 mt-3 inline-block max-w-lg max-sm:text-sm">
-            From layouts to interactions, every detail is built to deliver clarity, speed, and a seamless user
-            experience.
-        </p>
-    </div>
-    <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:mt-16 xl:grid-cols-4 2xl:mt-24 2xl:gap-6">
-        {#each features as feature, index (index)}
-            <div
-                class={`card border-base-300 cursor-pointer border border-dashed transition-all duration-300 ${feature.cardClass}`}>
-                <div class="card-body">
-                    <div>
-                        <div class={`inline-flex items-center p-2 ${feature.iconClass} rounded`}>
-                            <span class={`iconify ${feature.icon} size-6`}></span>
-                        </div>
-                        <p class="mt-3 text-lg font-medium">{feature.title}</p>
-                        <p class="text-base-content/80 overflow-ellipsis mt-0.5 line-clamp-2 text-sm">
-                            {feature.description}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        {/each}
-    </div>
+	<div class="text-center">
+		<div
+			class="inline-flex items-center rounded-box border border-indigo-500/10 bg-indigo-500/5 p-2"
+		>
+			<span class="iconify size-5 text-indigo-600 lucide--wand-2" />
+		</div>
+		<p id="fade-in" class="custom-fade-in mt-4 text-2xl font-semibold sm:text-3xl">
+			Everything You Need for SaaS Success
+		</p>
+		<p class="mt-3 inline-block max-w-lg text-base-content/70 max-sm:text-sm">
+			Skip months of setup and focus on your unique business logic. FastSvelte provides all the
+			essential SaaS infrastructure out of the box.
+		</p>
+	</div>
+	<div
+		class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:mt-16 xl:grid-cols-4 2xl:mt-24 2xl:gap-6"
+	>
+		{#each features as feature, index (index)}
+			<div
+				class={`card cursor-pointer border border-dashed border-base-300 transition-all duration-300 ${feature.cardClass}`}
+			>
+				<div class="card-body">
+					<div>
+						<div class={`inline-flex items-center p-2 ${feature.iconClass} rounded`}>
+							<span class={`iconify ${feature.icon} size-6`}></span>
+						</div>
+						<p class="mt-3 text-lg font-medium">{feature.title}</p>
+						<p class="mt-0.5 line-clamp-2 text-sm overflow-ellipsis text-base-content/80">
+							{feature.description}
+						</p>
+					</div>
+				</div>
+			</div>
+		{/each}
+	</div>
 </div>

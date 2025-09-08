@@ -1,14 +1,14 @@
 /* Root Styling */
-@import "./lib/styles/typography.css";
-@import "./lib/styles/tailwind.css";
-@import "./lib/styles/daisyui.css";
+@import './lib/styles/typography.css';
+@import './lib/styles/tailwind.css';
+@import './lib/styles/daisyui.css';
 
 /* Custom Declarations */
-@import "./lib/styles/core/animation.css";
-@import "./lib/styles/core/components.css";
+@import './lib/styles/core/animation.css';
+@import './lib/styles/core/components.css';
 
 /* Page wise */
-@import "./lib/styles/pages/landing.css";
+@import './lib/styles/pages/landing.css';
 
 /****  Plugins  ****/
 /* Animations */
@@ -16,5 +16,5 @@
 
 /* Iconify (Lucide icons) */
 @plugin "@iconify/tailwind4" {
-    prefixes: lucide, hugeicons, ri;
+	prefixes: lucide, hugeicons, ri;
 }
