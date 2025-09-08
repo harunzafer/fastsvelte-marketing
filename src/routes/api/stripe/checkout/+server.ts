@@ -1,16 +1,17 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import Stripe from 'stripe';
-import {
-	STRIPE_SECRET_KEY,
-	STRIPE_SOLO_PRICE_ID,
-	STRIPE_DEVELOPER_PRICE_ID,
-	STRIPE_TEAM_PRICE_ID,
-	PUBLIC_APP_URL
-} from '$env/static/private';
+import { env } from '$env/dynamic/private';
+
+// Use dynamic env imports with fallbacks for deployment
+const STRIPE_SECRET_KEY = env.STRIPE_SECRET_KEY || 'sk_test_placeholder';
+const STRIPE_SOLO_PRICE_ID = env.STRIPE_SOLO_PRICE_ID || 'price_placeholder';
+const STRIPE_DEVELOPER_PRICE_ID = env.STRIPE_DEVELOPER_PRICE_ID || 'price_placeholder';  
+const STRIPE_TEAM_PRICE_ID = env.STRIPE_TEAM_PRICE_ID || 'price_placeholder';
+const PUBLIC_APP_URL = env.PUBLIC_APP_URL || 'https://fastsvelte.dev';
 
 const stripe = new Stripe(STRIPE_SECRET_KEY, {
-	apiVersion: '2024-12-18.acacia'
+	apiVersion: '2023-10-16'
 });
 
 export const POST: RequestHandler = async ({ request }) => {
