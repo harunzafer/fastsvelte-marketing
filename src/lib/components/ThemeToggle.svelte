@@ -15,7 +15,7 @@
 
 <button
 	class={`relative overflow-hidden ${props.class ?? ''}`}
-	on:click={toggleTheme}
+	onclick={toggleTheme}
 	aria-label="Toggle Theme"
 >
 	<span

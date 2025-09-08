@@ -1,16 +1,17 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import Stripe from 'stripe';
-import {
-	STRIPE_SECRET_KEY,
-	STRIPE_WEBHOOK_SECRET,
-	GITHUB_TOKEN,
-	GITHUB_REPO_OWNER,
-	GITHUB_REPO_NAME
-} from '$env/static/private';
+import { env } from '$env/dynamic/private';
+
+// Use dynamic env imports with fallbacks for deployment
+const STRIPE_SECRET_KEY = env.STRIPE_SECRET_KEY || 'sk_test_placeholder';
+const STRIPE_WEBHOOK_SECRET = env.STRIPE_WEBHOOK_SECRET || 'whsec_placeholder';
+const GITHUB_TOKEN = env.GITHUB_TOKEN || 'ghp_placeholder';
+const GITHUB_REPO_OWNER = env.GITHUB_REPO_OWNER || 'harunzafer';
+const GITHUB_REPO_NAME = env.GITHUB_REPO_NAME || 'fastsvelte';
 
 const stripe = new Stripe(STRIPE_SECRET_KEY, {
-	apiVersion: '2024-12-18.acacia'
+	apiVersion: '2025-08-27.basil'
 });
 
 async function grantGitHubAccess(githubUsername: string, customerEmail: string) {
