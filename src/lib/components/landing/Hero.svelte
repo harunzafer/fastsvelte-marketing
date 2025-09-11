@@ -85,11 +85,11 @@
 					</div>
 				</a>
 				<a
-					href="https://docs.fastsvelte.dev"
+					href="#features"
 					class="btn gap-3 !border-transparent text-base btn-ghost btn-lg btn-neutral dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black"
 				>
-					<span class="iconify size-5 lucide--book-open sm:size-5.5" />
-					Documentation
+					<span class="iconify size-5 lucide--wand-2 sm:size-5.5" />
+					View Features
 				</a>
 			</div>
 			<div
@@ -101,15 +101,15 @@
 					<div class="swiper" id="hero-swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="mx-2 cursor-pointer">
-									<a class="relative" href="/dashboards/ecommerce">
+								<div class="mx-2">
+									<div class="relative">
 										<img
-											src="/images/landing/dashboard-ecommerce-light.jpg"
+											src="/images/landing/dashboard-admin-users-light.png"
 											class="h-full w-full rounded-lg dark:hidden"
 											alt="hero-landing"
 										/>
 										<img
-											src="/images/landing/dashboard-ecommerce-dark.jpg"
+											src="/images/landing/dashboard-admin-users-dark.png"
 											class="hidden h-full w-full rounded-lg dark:block"
 											alt="hero-landing"
 										/>
@@ -119,22 +119,22 @@
 											<div
 												class="mb-8 gap-2.5 rounded-box bg-white px-4 py-2 text-sm font-medium text-black/80"
 											>
-												Ecommerce Dashboard
+												Admin Users Dashboard
 											</div>
 										</div>
-									</a>
+									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="mx-2 cursor-pointer">
-									<a class="relative" href="/dashboards/gen-ai">
+								<div class="mx-2">
+									<div class="relative">
 										<img
-											src="/images/landing/dashboard-gen-ai-light.jpg"
+											src="/images/landing/dashboard-admin-analytics-light.png"
 											class="h-full w-full rounded-lg dark:hidden"
 											alt="hero-landing"
 										/>
 										<img
-											src="/images/landing/dashboard-gen-ai-dark.jpg"
+											src="/images/landing/dashboard-admin-analytics-dark.png"
 											class="hidden h-full w-full rounded-lg dark:block"
 											alt="hero-landing"
 										/>
@@ -144,22 +144,22 @@
 											<div
 												class="mb-8 gap-2.5 rounded-box bg-white px-4 py-2 text-sm font-medium text-black/80"
 											>
-												Gen AI Dashboard
+												Analytics Dashboard
 											</div>
 										</div>
-									</a>
+									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="mx-2 cursor-pointer">
-									<a class="relative" href="/dashboards/crm">
+								<div class="mx-2">
+									<div class="relative">
 										<img
-											src="/images/landing/dashboard-crm-light.jpg"
+											src="/images/landing/dashboard-user-main-light.png"
 											class="h-full w-full rounded-lg dark:hidden"
 											alt="hero-landing"
 										/>
 										<img
-											src="/images/landing/dashboard-crm-dark.jpg"
+											src="/images/landing/dashboard-user-main-dark.png"
 											class="hidden h-full w-full rounded-lg dark:block"
 											alt="hero-landing"
 										/>
@@ -169,22 +169,22 @@
 											<div
 												class="mb-8 gap-2.5 rounded-box bg-white px-4 py-2 text-sm font-medium text-black/80"
 											>
-												CRM Dashboard
+												User Dashboard
 											</div>
 										</div>
-									</a>
+									</div>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="mx-2 cursor-pointer">
-									<a class="relative" href="/components" target="_blank">
+								<div class="mx-2">
+									<div class="relative">
 										<img
-											src="/images/landing/components-home-light.jpg"
+											src="/images/landing/dashboard-user-notes-light.png"
 											class="h-full w-full rounded-lg dark:hidden"
 											alt="hero-landing"
 										/>
 										<img
-											src="/images/landing/components-home-dark.jpg"
+											src="/images/landing/dashboard-user-notes-dark.png"
 											class="hidden h-full w-full rounded-lg dark:block"
 											alt="hero-landing"
 										/>
@@ -194,10 +194,10 @@
 											<div
 												class="mb-8 gap-2.5 rounded-box bg-white px-4 py-2 text-sm font-medium text-black/80"
 											>
-												Components
+												Demo Application (Sample)
 											</div>
 										</div>
-									</a>
+									</div>
 								</div>
 							</div>
 						</div>

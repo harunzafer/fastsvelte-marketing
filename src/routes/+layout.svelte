@@ -6,9 +6,8 @@
 </script>
 
 <svelte:head>
-	<title>FastSvelte Marketing</title>
+	<title>FastSvelte</title>
 	<meta name="description" content="FastSvelte - Modern SaaS Starter Kit" />
-	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 </svelte:head>
 
 <ConfigProvider>
