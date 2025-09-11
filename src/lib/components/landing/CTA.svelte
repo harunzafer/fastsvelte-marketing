@@ -46,7 +46,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="mt-6 flex items-center justify-center gap-3 sm:gap-5 xl:mt-8">
+			<!-- <div class="mt-6 flex items-center justify-center gap-3 sm:gap-5 xl:mt-8">
 				<a
 					href="https://docs.fastsvelte.dev"
 					target="_blank"
@@ -62,7 +62,31 @@
 					Have questions?
 					<span class="iconify size-3.5 lucide--arrow-down" />
 				</a>
-			</div>
+			</div> -->
+			<div class="mt-6 flex items-center justify-center gap-3 sm:gap-5 xl:mt-8 flex-col sm:flex-row">
+	<a
+		href="https://docs.fastsvelte.dev"
+		target="_blank"
+		class="group btn relative gap-3 border-0 bg-linear-to-r from-primary to-secondary text-base text-primary-content"
+	>
+		<span class="iconify size-4 lucide--rocket sm:size-5"></span>
+		Get Started Now
+	</a>
+
+	<!-- Email capture form -->
+	<form class="flex w-full max-w-sm items-center gap-2" on:submit|preventDefault={subscribe}>
+		<input
+			type="email"
+			placeholder="Enter your email"
+			class="input input-bordered flex-1"
+			required
+		/>
+		<button type="submit" class="btn btn-outline">
+			Get Updates
+		</button>
+	</form>
+</div>
+
 		</div>
 	</div>
 </div>

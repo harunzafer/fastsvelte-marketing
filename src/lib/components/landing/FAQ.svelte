@@ -159,6 +159,24 @@
 						</p>
 					</div>
 				</div>
+				<div class="collapse-plus collapse border-base-300">
+					<input type="radio" aria-label="Accordion radio" name="accordion" />
+					<div class="collapse-title cursor-pointer font-medium sm:text-xl">
+						<div class="ite flex items-center gap-4">
+							<div
+								class="inline-flex items-center justify-center rounded-box border border-base-300 p-1.5"
+							>
+								<span class="iconify size-4.5 lucide--file-text"></span>
+							</div>
+							What is the AI Note Improver demo application?
+						</div>
+					</div>
+					<div class="collapse-content ms-12">
+						<p>
+							FastSvelte includes a complete <strong>AI Note Improver</strong> demo that showcases CRUD operations, OpenAI integration, and usage-based billing. <strong>Replace this demo with your own core functionality</strong> while keeping the common SaaS functionality like authentication, payments, and admin dashboard.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

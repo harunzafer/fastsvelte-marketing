@@ -1,14 +1,13 @@
 <script lang="ts">
-	import CTA from './landing/components/CTA.svelte';
-	import FAQ from './landing/components/FAQ.svelte';
-	import FeatureList from './landing/components/Features.svelte';
-	import Footer from './landing/components/Footer.svelte';
-	import Hero from './landing/components/Hero.svelte';
-	import Pricing from './landing/components/Pricing.svelte';
-	import Showcase from './landing/components/Showcase.svelte';
-	import Testimonial from './landing/components/Testimonial.svelte';
-	import TimeSavings from './landing/components/TimeSavings.svelte';
-	import Topbar from './landing/components/Topbar.svelte';
+	import CTA from '$lib/components/landing/CTA.svelte';
+	import FAQ from '$lib/components/landing/FAQ.svelte';
+	import FeatureList from '$lib/components/landing/Features.svelte';
+	import Footer from '$lib/components/landing/Footer.svelte';
+	import Hero from '$lib/components/landing/Hero.svelte';
+	import Pricing from '$lib/components/landing/Pricing.svelte';	
+	import Testimonial from '$lib/components/landing/Testimonial.svelte';
+	import TimeSavings from '$lib/components/landing/TimeSavings.svelte';
+	import Topbar from '$lib/components/landing/Topbar.svelte';
 </script>
 
 <div class="bg-[var(--layout-background)]">
@@ -16,8 +15,8 @@
 	<Hero />
 	<FeatureList />
 	<TimeSavings />
-	<Showcase />
-	<Testimonial />
+	<!-- <Showcase /> -->
+	<!-- <Testimonial /> -->
 	<Pricing />
 	<CTA />
 	<FAQ />

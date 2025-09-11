@@ -321,7 +321,7 @@
 		</p>
 	</div>
 
-	<div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-6 xl:mt-16">
+	<div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:mt-16 max-w-5xl mx-auto">
 		{#each plans as plan}
 			<div
 				class={`card relative ${plan.popular ? 'border-2 border-transparent bg-linear-to-br from-primary/20 to-secondary/20 bg-origin-border' : 'border border-base-300 bg-base-100'}`}
@@ -336,7 +336,7 @@
 					</div>
 				{/if}
 
-				<div class="card-body flex flex-col h-full">
+				<div class="card-body p-4 sm:p-6 flex flex-col h-full">
 					<div class="text-center">
 						<h3 class="text-xl font-semibold">{plan.name}</h3>
 						<div class="mt-2">
@@ -346,16 +346,16 @@
 						<p class="mt-2 text-sm text-base-content/70">{plan.description}</p>
 					</div>
 
-					<div class="mt-6 space-y-3 flex-grow">
+					<div class="mt-4 sm:mt-6 space-y-2 sm:space-y-3 flex-grow">
 						{#each plan.features.filter(f => f.included) as feature}
-							<div class="flex items-center gap-3">
+							<div class="flex items-center gap-2 sm:gap-3">
 								{#if feature.highlight}
-									<span class="iconify size-5 flex-shrink-0 text-yellow-500 lucide--star"></span>
+									<span class="iconify size-4 sm:size-5 flex-shrink-0 text-yellow-500 lucide--star"></span>
 									<div class="tooltip tooltip-right" data-tip={feature.tooltip}>
 										<span class="cursor-help text-sm font-medium">{feature.name}</span>
 									</div>
 								{:else}
-									<span class="iconify size-5 flex-shrink-0 text-green-500 lucide--check"></span>
+									<span class="iconify size-4 sm:size-5 flex-shrink-0 text-green-500 lucide--check"></span>
 									<div class="tooltip tooltip-right" data-tip={feature.tooltip}>
 										<span class="cursor-help text-sm">{feature.name}</span>
 									</div>
@@ -364,7 +364,7 @@
 						{/each}
 					</div>
 
-					<div class="mt-6 flex justify-center">
+					<div class="mt-4 sm:mt-6 flex justify-center">
 						<button
 							onclick={() => handlePurchase(plan.id)}
 							class={`btn ${plan.ctaStyle}`}

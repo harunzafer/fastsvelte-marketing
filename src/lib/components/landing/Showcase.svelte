@@ -1,4 +1,4 @@
-<div id="features">
+<div id="showcase">
 	<div class="relative container py-8 md:py-12 xl:py-16 2xl:py-24">
 		<div class="relative z-10 grid gap-12 lg:grid-cols-7 lg:gap-24">
 			<div class="flex flex-col max-sm:items-center max-sm:text-center lg:col-span-3">

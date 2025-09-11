@@ -75,7 +75,7 @@
 	] as const;
 </script>
 
-<div class="container py-8 md:py-12 xl:py-16 2xl:py-24">
+<div id="features" class="container py-8 md:py-12 xl:py-16 2xl:py-24">
 	<div class="text-center">
 		<div
 			class="inline-flex items-center rounded-box border border-indigo-500/10 bg-indigo-500/5 p-2"

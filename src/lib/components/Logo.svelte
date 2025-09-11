@@ -1,12 +1,10 @@
 <script lang="ts">
-	type ILogo = {
-		className?: string;
-	};
+    type ILogo = {
+        className?: string;
+    };
 
-	let { className }: ILogo = $props();
+    let { className }: ILogo = $props();
 </script>
 
-<div class={`flex items-center gap-1 ${className ?? ''}`}>
-	<span class="text-xl">⚡</span>
-	<span class="text-lg font-semibold">FastSvelte</span>
-</div>
+<img src="/images/logo/logo-dark.png" alt="logo-dark" class={`hidden h-5 dark:block ${className ?? ""}`} />
+<img src="/images/logo/logo-light.png" alt="logo-light" class={`h-5 dark:hidden block ${className ?? ""}`} />
