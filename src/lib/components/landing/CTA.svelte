@@ -63,7 +63,7 @@
 				<div
 					class="inline-flex items-center rounded-full bg-linear-to-tr from-primary to-secondary p-2.5 text-primary-content"
 				>
-					<span class="iconify size-5 lucide--rocket" />
+					<span class="iconify size-5 lucide--rocket"></span>
 				</div>
 				<p class="mt-4 text-xl font-bold sm:text-2xl lg:text-4xl">Start Building Your SaaS Today</p>
 				<p class="mt-3 inline-block max-w-2xl max-sm:text-sm">
@@ -102,7 +102,7 @@
 				</a>
 				<a href="#faqs" class="btn btn-ghost">
 					Have questions?
-					<span class="iconify size-3.5 lucide--arrow-down" />
+					<span class="iconify size-3.5 lucide--arrow-down"></span>
 				</a>
 			</div> -->
 			<div class="mt-6 flex flex-col items-center justify-center gap-5 xl:mt-8">

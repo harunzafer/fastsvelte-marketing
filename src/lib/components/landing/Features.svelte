@@ -88,7 +88,7 @@
 		<div
 			class="inline-flex items-center rounded-box border border-indigo-500/10 bg-indigo-500/5 p-2"
 		>
-			<span class="iconify size-5 text-indigo-600 lucide--wand-2" />
+			<span class="iconify size-5 text-indigo-600 lucide--wand-2"></span>
 		</div>
 		<p id="fade-in" class="custom-fade-in mt-4 text-2xl font-semibold sm:text-3xl">
 			Everything You Need for SaaS Success

@@ -78,7 +78,7 @@
 					target="_blank"
 					class="btn gap-2.5 btn-lg btn-primary"
 				>
-					<span class="iconify size-5 lucide--rocket sm:size-5.5" />
+					<span class="iconify size-5 lucide--rocket sm:size-5.5"></span>
 					<div class="text-start">
 						<p class="text-sm/none">Get Started</p>
 						<p class="mt-px text-[11px]/none text-primary-content/70">5-min setup</p>
@@ -88,7 +88,7 @@
 					href="#features"
 					class="btn gap-3 !border-transparent text-base btn-ghost btn-lg btn-neutral dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black"
 				>
-					<span class="iconify size-5 lucide--wand-2 sm:size-5.5" />
+					<span class="iconify size-5 lucide--wand-2 sm:size-5.5"></span>
 					View Features
 				</a>
 			</div>
@@ -208,11 +208,13 @@
 				>
 					<button
 						class="hero-swiper-button-prev flex size-8 cursor-pointer items-center justify-center rounded-full border-base-200 bg-white shadow-xs transition-all hover:shadow-md max-md:shadow md:size-10 dark:border-white/10 dark:bg-white/10 dark:hover:bg-white/20"
+						aria-label="Previous slide"
 					>
 						<span class="iconify size-5 lucide--chevron-left"></span>
 					</button>
 					<button
 						class="hero-swiper-button-next flex size-8 cursor-pointer items-center justify-center rounded-full border-base-200 bg-white shadow-xs transition-all hover:shadow-md max-md:shadow md:size-10 dark:border-white/10 dark:bg-white/10 dark:hover:bg-white/20"
+						aria-label="Next slide"
 					>
 						<span class="iconify size-5 lucide--chevron-right"></span>
 					</button>

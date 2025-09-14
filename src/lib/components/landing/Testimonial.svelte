@@ -65,7 +65,7 @@
 			<div
 				class="inline-flex items-center rounded-box border border-orange-500/10 bg-orange-500/5 p-2"
 			>
-				<span class="iconify size-5 text-orange-600 lucide--sparkles" />
+				<span class="iconify size-5 text-orange-600 lucide--sparkles"></span>
 			</div>
 			<h2 class="mt-4 text-2xl font-semibold sm:text-3xl">Developers Love FastSvelte</h2>
 			<p class="mt-3 inline-block max-w-lg text-base-content/70 max-sm:text-sm">

@@ -20,11 +20,12 @@
 						class="btn btn-circle btn-sm"
 						href="https://github.com/harunzafer/fastsvelte"
 						target="_blank"
+						aria-label="Visit FastSvelte GitHub repository"
 					>
-						<span class="iconify size-4 lucide--github" />
+						<span class="iconify size-4 lucide--github"></span>
 					</a>
-					<a class="btn btn-circle btn-sm" href="https://docs.fastsvelte.dev" target="_blank">
-						<span class="iconify size-3.5 lucide--book-open" />
+					<a class="btn btn-circle btn-sm" href="https://docs.fastsvelte.dev" target="_blank" aria-label="Visit FastSvelte documentation">
+						<span class="iconify size-3.5 lucide--book-open"></span>
 					</a>
 				</div>
 			</div>
