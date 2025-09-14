@@ -64,7 +64,6 @@
 				Got questions about FastSvelte? Find answers to the most common questions about our SaaS
 				starter kit.
 			</p>
-
 			<!-- Contact section for specific questions -->
 			<div class="mt-4">
 				<h4 class="text-base font-semibold">Have other questions?</h4>
