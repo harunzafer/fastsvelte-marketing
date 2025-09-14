@@ -19,10 +19,10 @@
 			description: 'Organizations, role-based access, team invitations, and B2B features'
 		},
 		{
-			title: 'Admin Dashboard',
-			savings: '80+ hours',
-			icon: 'lucide--layout-dashboard', 
-			description: 'Professional UI with 50+ components, charts, tables, and forms'
+			title: 'Admin & User Dashboard',
+			savings: '40+ hours',
+			icon: 'lucide--layout-dashboard',
+			description: 'Admin and user interfaces with role-based access and management tools'
 		},
 		{
 			title: 'Database & Migrations',
@@ -31,10 +31,10 @@
 			description: 'PostgreSQL setup, schema migrations, and data management'
 		},
 		{
-			title: 'DevOps Setup',
-			savings: '40+ hours',
-			icon: 'lucide--server',
-			description: 'Docker containers, deployment configs, and CI/CD pipelines'
+			title: 'Email & Landing Page',
+			savings: '25+ hours',
+			icon: 'lucide--mail',
+			description: 'Email system with templates, plus professional marketing site with SEO optimization'
 		}
 	] as const;
 
