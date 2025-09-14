@@ -10,7 +10,7 @@
 	const faqs = [
 		{
 			icon: 'lucide--credit-card',
-			question: 'What\'s included in each plan?',
+			question: "What's included in each plan?",
 			answer: `All plans include the complete FastSvelte codebase with source code, documentation, and a single project license. Higher tiers add commercial licenses for multiple projects, priority support, and exclusive Discord access. Check our pricing page for full details.`
 		},
 		{
@@ -71,19 +71,16 @@
 					Can't find what you're looking for? We're here to help.
 				</p>
 				<div class="mt-3 flex items-center gap-3">
-					<a
-						href="mailto:support@fastsvelte.dev"
-						class="btn btn-primary btn-sm gap-2"
-					>
-						<span class="iconify lucide--mail size-4"></span>
+					<a href="mailto:support@fastsvelte.dev" class="btn gap-2 btn-sm btn-primary">
+						<span class="iconify size-4 lucide--mail"></span>
 						Email Support
 					</a>
 					<a
 						href="https://docs.fastsvelte.dev"
 						target="_blank"
-						class="btn btn-outline btn-sm gap-2"
+						class="btn gap-2 btn-outline btn-sm"
 					>
-						<span class="iconify lucide--book-open size-4"></span>
+						<span class="iconify size-4 lucide--book-open"></span>
 						Browse Docs
 					</a>
 				</div>
@@ -92,8 +89,11 @@
 		<div class="lg:col-span-4">
 			<div class="space-y-0">
 				{#each faqs as faq, index}
-					<div class="border-base-300 border-b">
-						<div class="cursor-pointer font-medium sm:text-xl p-4 hover:bg-base-50" onclick={() => toggleAccordion(index)}>
+					<div class="border-b border-base-300">
+						<div
+							class="hover:bg-base-50 cursor-pointer p-4 font-medium sm:text-xl"
+							onclick={() => toggleAccordion(index)}
+						>
 							<div class="flex items-center justify-between">
 								<div class="flex items-center gap-4">
 									<div
@@ -104,9 +104,10 @@
 									{faq.question}
 								</div>
 								{#if activeIndex === index}
-									<span class="iconify lucide--minus size-5 transition-all duration-300 rotate-180"></span>
+									<span class="iconify size-5 rotate-180 transition-all duration-300 lucide--minus"
+									></span>
 								{:else}
-									<span class="iconify lucide--plus size-5 transition-all duration-300"></span>
+									<span class="iconify size-5 transition-all duration-300 lucide--plus"></span>
 								{/if}
 							</div>
 						</div>

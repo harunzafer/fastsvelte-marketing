@@ -6,7 +6,7 @@ import { env } from '$env/dynamic/private';
 // Use dynamic env imports with fallbacks for deployment
 const STRIPE_SECRET_KEY = env.STRIPE_SECRET_KEY || 'sk_test_placeholder';
 const STRIPE_SOLO_PRICE_ID = env.STRIPE_SOLO_PRICE_ID || 'price_placeholder';
-const STRIPE_DEVELOPER_PRICE_ID = env.STRIPE_DEVELOPER_PRICE_ID || 'price_placeholder';  
+const STRIPE_DEVELOPER_PRICE_ID = env.STRIPE_DEVELOPER_PRICE_ID || 'price_placeholder';
 const STRIPE_TEAM_PRICE_ID = env.STRIPE_TEAM_PRICE_ID || 'price_placeholder';
 const PUBLIC_APP_URL = env.PUBLIC_APP_URL || 'https://fastsvelte.dev';
 

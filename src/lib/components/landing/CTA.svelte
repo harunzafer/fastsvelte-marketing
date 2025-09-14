@@ -16,9 +16,9 @@
 			const response = await fetch('/api/subscribe', {
 				method: 'POST',
 				headers: {
-					'Content-Type': 'application/json',
+					'Content-Type': 'application/json'
 				},
-				body: JSON.stringify({ email }),
+				body: JSON.stringify({ email })
 			});
 
 			const data = await response.json();
@@ -105,9 +105,7 @@
 					<span class="iconify size-3.5 lucide--arrow-down" />
 				</a>
 			</div> -->
-			<div
-				class="mt-6 flex flex-col items-center justify-center gap-5 xl:mt-8"
-			>
+			<div class="mt-6 flex flex-col items-center justify-center gap-5 xl:mt-8">
 				<a
 					href="https://docs.fastsvelte.dev"
 					target="_blank"
@@ -136,7 +134,11 @@
 						</button>
 					</form>
 					{#if message}
-						<p class="mt-2 text-center text-sm" class:text-success={isSuccess} class:text-error={!isSuccess}>
+						<p
+							class="mt-2 text-center text-sm"
+							class:text-success={isSuccess}
+							class:text-error={!isSuccess}
+						>
 							{message}
 						</p>
 					{/if}
