@@ -45,7 +45,7 @@
 					<input id="landing-menu-drawer" type="checkbox" class="drawer-toggle" />
 					<div class="drawer-content">
 						<label for="landing-menu-drawer" class="drawer-button btn btn-square btn-ghost btn-sm">
-							<span class="iconify size-4.5 lucide--menu" />
+							<span class="iconify size-4.5 lucide--menu"></span>
 						</label>
 					</div>
 					<div class="drawer-side z-[50]">
@@ -82,7 +82,7 @@
 				target="_blank"
 				class="group/purchase btn relative gap-2 border-0 bg-linear-to-r from-primary to-secondary text-sm text-primary-content btn-sm max-sm:btn-square"
 			>
-				<span class="iconify size-4 lucide--shopping-cart" />
+				<span class="iconify size-4 lucide--shopping-cart"></span>
 				<span class="max-sm:hidden">Buy Now</span>
 				<div
 					class="absolute inset-x-0 top-1 -z-1 h-8 bg-linear-to-r from-primary to-secondary opacity-40 blur-md transition-all duration-500 group-hover/purchase:opacity-60 group-hover/purchase:blur-lg"

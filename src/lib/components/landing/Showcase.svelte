@@ -5,7 +5,7 @@
 				<div
 					class="inline-flex w-fit items-center rounded-box border border-teal-500/5 bg-teal-500/5 p-2.5"
 				>
-					<span class="iconify size-5 text-teal-600 lucide--box" />
+					<span class="iconify size-5 text-teal-600 lucide--box"></span>
 				</div>
 				<p class="mt-3 text-2xl font-semibold sm:text-3xl">FastSvelte in Action</p>
 				<p class="mt-4 text-base-content/70 max-sm:text-sm">
@@ -20,7 +20,7 @@
 						class="btn btn-outline btn-sm btn-neutral"
 					>
 						View Documentation
-						<span class="iconify lucide--external-link" />
+						<span class="iconify lucide--external-link"></span>
 					</a>
 				</div>
 			</div>
@@ -36,15 +36,15 @@
 				>
 					<div class="flex flex-wrap justify-center gap-6">
 						<button class="btn btn-sm btn-secondary">
-							<span class="iconify size-3.5 lucide--search" />
+							<span class="iconify size-3.5 lucide--search"></span>
 							Search
 						</button>
 						<button class="btn btn-ghost btn-sm">
-							<span class="iconify size-3.5 lucide--upload" />
+							<span class="iconify size-3.5 lucide--upload"></span>
 							Upload
 						</button>
 						<button class="btn btn-circle btn-sm btn-primary" aria-label="Buy Now">
-							<span class="iconify size-4 lucide--shopping-cart" />
+							<span class="iconify size-4 lucide--shopping-cart"></span>
 						</button>
 						<div class="dropdown">
 							<div tabIndex={0} role="button" class="btn btn-sm">Dropdown</div>
@@ -53,10 +53,10 @@
 								class="dropdown-content menu z-1 w-40 rounded-box bg-base-100 p-2 shadow-sm"
 							>
 								<li>
-									<a>Item 1</a>
+									<button type="button">Item 1</button>
 								</li>
 								<li>
-									<a>Item 2</a>
+									<button type="button">Item 2</button>
 								</li>
 							</ul>
 						</div>
@@ -223,7 +223,7 @@
 								</fieldset>
 							</div>
 							<div class="form-control mt-4">
-								<textarea class="textarea" placeholder="Bio" />
+								<textarea class="textarea" placeholder="Bio"></textarea>
 							</div>
 							<div class="mt-5">
 								<input
@@ -240,7 +240,7 @@
 									max={100}
 									id="showcase_progress"
 									class="progress h-1 w-full progress-success"
-								/>
+								></progress>
 								<label class="hidden" for="showcase_progress"> Progress </label>
 							</div>
 						</div>

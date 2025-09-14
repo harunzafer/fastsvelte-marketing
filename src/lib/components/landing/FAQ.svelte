@@ -57,7 +57,7 @@
 			<div
 				class="inline-flex w-fit items-center rounded-box border border-purple-500/10 bg-purple-500/5 p-2"
 			>
-				<span class="iconify size-5 text-purple-600 lucide--messages-square" />
+				<span class="iconify size-5 text-purple-600 lucide--messages-square"></span>
 			</div>
 			<p class="mt-4 text-2xl font-semibold sm:text-3xl">Frequently Asked Questions</p>
 			<p class="mt-3 inline-block max-w-lg text-base-content/70 max-sm:text-sm">
@@ -90,9 +90,11 @@
 			<div class="space-y-0">
 				{#each faqs as faq, index}
 					<div class="border-b border-base-300">
-						<div
-							class="hover:bg-base-50 cursor-pointer p-4 font-medium sm:text-xl"
+						<button
+							class="hover:bg-base-50 cursor-pointer p-4 font-medium sm:text-xl w-full text-left"
 							onclick={() => toggleAccordion(index)}
+							aria-expanded={activeIndex === index}
+							aria-controls="faq-content-{index}"
 						>
 							<div class="flex items-center justify-between">
 								<div class="flex items-center gap-4">
@@ -110,9 +112,9 @@
 									<span class="iconify size-5 transition-all duration-300 lucide--plus"></span>
 								{/if}
 							</div>
-						</div>
+						</button>
 						{#if activeIndex === index}
-							<div class="p-4 pl-16" transition:slide={{ duration: 300 }}>
+							<div class="p-4 pl-16" id="faq-content-{index}" transition:slide={{ duration: 300 }}>
 								<p>{@html faq.answer}</p>
 							</div>
 						{/if}

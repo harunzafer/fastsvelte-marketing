@@ -6,7 +6,7 @@
 		<div
 			class="inline-flex items-center rounded-box border border-purple-500/10 bg-purple-500/5 p-2 text-purple-500"
 		>
-			<span class="iconify size-5 lucide--package-search" />
+			<span class="iconify size-5 lucide--package-search"></span>
 		</div>
 		<p class="mt-4 text-2xl font-semibold sm:text-3xl">The Powerful Admin & Startup Solution</p>
 		<p class="mt-3 inline-block max-w-lg text-base-content/70 max-sm:text-sm">
@@ -37,7 +37,7 @@
 			</p>
 			<div class="flex justify-center">
 				<button class="btn mt-5 gap-3 text-base btn-primary">
-					<span class="iconify size-4 lucide--plane-takeoff sm:size-5" />
+					<span class="iconify size-4 lucide--plane-takeoff sm:size-5"></span>
 					Get Scalo
 				</button>
 			</div>
@@ -72,7 +72,7 @@
 						<button
 							class="btn gap-3 border-0 bg-linear-to-br from-primary to-secondary text-base text-primary-content shadow-inner shadow-primary-content/20"
 						>
-							<span class="iconify size-4 lucide--package sm:size-5" />
+							<span class="iconify size-4 lucide--package sm:size-5"></span>
 							Get Bundle
 						</button>
 					</div>
