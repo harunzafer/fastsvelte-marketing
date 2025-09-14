@@ -1,3 +1,45 @@
+<script lang="ts">
+	let email = '';
+	let loading = false;
+	let message = '';
+	let isSuccess = false;
+
+	async function handleSubscribe(event: Event) {
+		event.preventDefault();
+
+		if (!email) return;
+
+		loading = true;
+		message = '';
+
+		try {
+			const response = await fetch('/api/subscribe', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ email })
+			});
+
+			const data = await response.json();
+
+			if (response.ok) {
+				message = data.message;
+				isSuccess = true;
+				email = ''; // Clear the form
+			} else {
+				message = data.error || 'Something went wrong. Please try again.';
+				isSuccess = false;
+			}
+		} catch (error) {
+			message = 'Network error. Please try again.';
+			isSuccess = false;
+		} finally {
+			loading = false;
+		}
+	}
+</script>
+
 <div class="container sm:px-16">
 	<div
 		class="relative overflow-hidden py-8 sm:rounded-[60px] md:py-12 xl:py-16 2xl:pt-24 2xl:pb-48"
@@ -63,30 +105,45 @@
 					<span class="iconify size-3.5 lucide--arrow-down" />
 				</a>
 			</div> -->
-			<div class="mt-6 flex items-center justify-center gap-3 sm:gap-5 xl:mt-8 flex-col sm:flex-row">
-	<a
-		href="https://docs.fastsvelte.dev"
-		target="_blank"
-		class="group btn relative gap-3 border-0 bg-linear-to-r from-primary to-secondary text-base text-primary-content"
-	>
-		<span class="iconify size-4 lucide--rocket sm:size-5"></span>
-		Get Started Now
-	</a>
+			<div class="mt-6 flex flex-col items-center justify-center gap-5 xl:mt-8">
+				<a
+					href="https://docs.fastsvelte.dev"
+					target="_blank"
+					class="group btn relative gap-3 border-0 bg-linear-to-r from-primary to-secondary text-base text-primary-content"
+				>
+					<span class="iconify size-4 lucide--rocket sm:size-5"></span>
+					Get Started Now
+				</a>
 
-	<!-- Email capture form -->
-	<form class="flex w-full max-w-sm items-center gap-2" on:submit|preventDefault={subscribe}>
-		<input
-			type="email"
-			placeholder="Enter your email"
-			class="input input-bordered flex-1"
-			required
-		/>
-		<button type="submit" class="btn btn-outline">
-			Get Updates
-		</button>
-	</form>
-</div>
-
+				<!-- Email capture form with better marketing -->
+				<div class="w-full max-w-sm">
+					<p class="mb-2 text-center text-sm text-base-content/70">
+						🎉 Get notified about updates + exclusive discounts
+					</p>
+					<form class="flex items-center gap-2" onsubmit={handleSubscribe}>
+						<input
+							bind:value={email}
+							type="email"
+							placeholder="your@email.com"
+							class="input-bordered input flex-1"
+							required
+							disabled={loading}
+						/>
+						<button type="submit" class="btn btn-primary" disabled={loading}>
+							{loading ? 'Subscribing...' : 'Subscribe'}
+						</button>
+					</form>
+					{#if message}
+						<p
+							class="mt-2 text-center text-sm"
+							class:text-success={isSuccess}
+							class:text-error={!isSuccess}
+						>
+							{message}
+						</p>
+					{/if}
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

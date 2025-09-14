@@ -4,7 +4,7 @@
 			icon: 'lucide--key',
 			title: 'Complete Authentication',
 			description:
-				'Lucia-compliant auth with PostgreSQL. Email verification, password reset, session management, and role-based authorization - all built-in',
+				'Username/password and Google OAuth login, email verification, password reset, and role-based access.',
 			iconClass: 'text-blue-500 bg-blue-500/5',
 			cardClass: 'hover:border-blue-500/40 hover:bg-blue-500/5'
 		},
@@ -12,7 +12,7 @@
 			icon: 'lucide--credit-card',
 			title: 'Stripe Integration',
 			description:
-				'Full payment processing with webhook handling, subscription management, and billing automation',
+				'Payment processing, webhook handling, subscription management, and billing automation.',
 			iconClass: 'text-violet-500 bg-violet-500/5',
 			cardClass: 'hover:border-violet-500/40 hover:bg-violet-500/5'
 		},
@@ -25,10 +25,26 @@
 			cardClass: 'hover:border-cyan-600/40 hover:bg-cyan-600/5'
 		},
 		{
+			icon: 'lucide--layout-dashboard',
+			title: 'Admin & User Dashboards',
+			description:
+				'Separate admin and user interfaces with role-based access, analytics, and management tools.',
+			iconClass: 'text-violet-500 bg-violet-500/5',
+			cardClass: 'hover:border-violet-500/40 hover:bg-violet-500/5'
+		},
+		{
+			icon: 'lucide--globe',
+			title: 'Landing Page Template',
+			description:
+				'Professional marketing site template with SEO optimization and conversion-focused design.',
+			iconClass: 'text-emerald-500 bg-emerald-500/5',
+			cardClass: 'hover:border-emerald-500/40 hover:bg-emerald-500/5'
+		},
+		{
 			icon: 'lucide--brain',
 			title: 'AI/ML Ready Python Backend',
 			description:
-				'FastAPI foundation perfect for integrating OpenAI, LangChain, ML models, and data processing',
+				'Python FastAPI backend with OpenAI integration demo. Perfect for AI/ML features and data processing.',
 			iconClass: 'text-fuchsia-500 bg-fuchsia-500/5',
 			cardClass: 'hover:border-fuchsia-500/40 hover:bg-fuchsia-500/5'
 		},
@@ -36,17 +52,9 @@
 			icon: 'lucide--zap',
 			title: 'SPA Performance',
 			description:
-				'SvelteKit SPA with instant navigation, client-side routing, and superior developer experience',
+				'SvelteKit SPA with instant navigation, client-side routing, and superior dev experience.',
 			iconClass: 'text-orange-400 bg-orange-500/5',
 			cardClass: 'hover:border-orange-400/40 hover:bg-orange-400/5'
-		},
-		{
-			icon: 'lucide--server',
-			title: 'Deploy Anywhere',
-			description:
-				'Docker-first containerization. Deploy to any VPS, cloud provider, or on-premise infrastructure',
-			iconClass: 'text-teal-500 bg-teal-500/5',
-			cardClass: 'hover:border-teal-500/40 hover:bg-teal-500/5'
 		},
 		{
 			icon: 'lucide--layers-3',
@@ -57,18 +65,18 @@
 			cardClass: 'hover:border-blue-500/40 hover:bg-blue-500/5'
 		},
 		{
-			icon: 'lucide--palette',
-			title: 'Professional UI Components',
+			icon: 'lucide--server',
+			title: 'Deploy Anywhere',
 			description:
-				'Beautiful admin dashboard with 50+ pre-built components, charts, tables, and responsive design patterns',
-			iconClass: 'text-violet-500 bg-violet-500/5',
-			cardClass: 'hover:border-violet-500/40 hover:bg-violet-500/5'
+				'Docker-first containerization. Deploy to any VPS, cloud provider, or on-premise infrastructure',
+			iconClass: 'text-teal-500 bg-teal-500/5',
+			cardClass: 'hover:border-teal-500/40 hover:bg-teal-500/5'
 		},
 		{
 			icon: 'lucide--bot',
 			title: 'AI-Optimized Codebase',
 			description:
-				'Clean project structure and comprehensive documentation make AI tools like Claude, Cursor, and GitHub Copilot incredibly efficient for development',
+				'Clean structure and docs make AI tools like Claude CLI, Cursor, and Copilot incredibly efficient.',
 			iconClass: 'text-emerald-500 bg-emerald-500/5',
 			cardClass: 'hover:border-emerald-500/40 hover:bg-emerald-500/5'
 		}

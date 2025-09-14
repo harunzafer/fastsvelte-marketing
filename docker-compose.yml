@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: fastsvelte-marketing-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: fastsvelte_marketing
+    ports:
+      - '5433:5432'
+    volumes:
+      - fastsvelte-marketing-data:/var/lib/postgresql/data
+
+volumes:
+  fastsvelte-marketing-data:
