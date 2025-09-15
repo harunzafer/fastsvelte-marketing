@@ -37,6 +37,7 @@
 		"@iconify/tailwind4": "^1.0.6",
 		"@prisma/client": "^6.16.1",
 		"@stripe/stripe-js": "^7.9.0",
+		"@vercel/analytics": "^1.5.0",
 		"daisyui": "^5.1.6",
 		"prisma": "^6.16.1",
 		"stripe": "^18.5.0",
