@@ -40,7 +40,7 @@
 	}
 </script>
 
-<div class="container sm:px-16">
+<div id="newsletter" class="container sm:px-16">
 	<div
 		class="relative overflow-hidden py-8 sm:rounded-[60px] md:py-12 xl:py-16 2xl:pt-24 2xl:pb-48"
 	>
