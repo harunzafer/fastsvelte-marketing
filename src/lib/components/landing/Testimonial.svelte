@@ -18,7 +18,7 @@
 			name: 'Mike Rodriguez',
 			role: 'Startup Founder',
 			comment:
-				'Deployed my SaaS in 3 days instead of 3 months. The authentication, payments, and multi-tenancy just work. No vendor lock-in means I can scale anywhere. FastSvelte is a game-changer.'
+				'Deployed my SaaS in 3 hours instead of 3 months. The authentication, payments, and multi-tenancy just work. No vendor lock-in means I can scale anywhere. FastSvelte is a game-changer.'
 		},
 		{
 			id: 'landing-testimonial-3',

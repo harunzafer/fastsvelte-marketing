@@ -1,3 +1,12 @@
-# allow crawling everything by default
 User-agent: *
-Disallow:
+Allow: /
+
+# Disallow admin/sensitive areas (if any)
+Disallow: /api/
+Disallow: /.well-known/
+
+# Sitemap
+Sitemap: https://fastsvelte.dev/sitemap.xml
+
+# Crawl-delay for good behavior
+Crawl-delay: 1
