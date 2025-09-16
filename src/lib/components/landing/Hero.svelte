@@ -57,7 +57,7 @@
 					<span
 						class="animated-text bg-linear-to-r from-purple-500 via-blue-500 to-cyan-600 dark:from-purple-400 dark:via-blue-400 dark:to-cyan-400"
 					>
-						Days, Not Months
+						Hours, Not Months
 					</span>
 				</p>
 			</div>
