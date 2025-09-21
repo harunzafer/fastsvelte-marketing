@@ -5,8 +5,6 @@ import { constructWebhookEvent, extractCheckoutSessionData } from '$lib/server/s
 import { grantRepositoryAccess } from '$lib/server/github';
 import { sendPurchaseConfirmation } from '$lib/server/email';
 
-
-
 export const POST: RequestHandler = async ({ request }) => {
 	try {
 		const body = await request.text();

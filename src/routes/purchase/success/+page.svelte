@@ -40,7 +40,7 @@
 				</div>
 			</div>
 		{:else}
-			<div class="card bg-base-100 shadow-xl border border-base-300">
+			<div class="card border border-base-300 bg-base-100 shadow-xl">
 				<div class="card-body text-center">
 					<span class="mx-auto mb-4 iconify size-16 text-success lucide--check-circle"></span>
 					<h1 class="mb-4 card-title justify-center text-3xl">Purchase Successful!</h1>
@@ -48,7 +48,7 @@
 						Thank you for purchasing FastSvelte! Your payment has been processed successfully.
 					</p>
 
-					<div class="mb-6 rounded-lg bg-success/10 border border-success/20 p-6 text-left">
+					<div class="mb-6 rounded-lg border border-success/20 bg-success/10 p-6 text-left">
 						<h2 class="mb-3 text-lg font-semibold text-success">What happens next?</h2>
 						<ul class="space-y-3">
 							<li class="flex items-start gap-3">
@@ -56,11 +56,13 @@
 								<span>You'll receive a confirmation email shortly</span>
 							</li>
 							<li class="flex items-start gap-3">
-								<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--github"></span>
+								<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--github"
+								></span>
 								<span>GitHub repository access will be granted within 15 minutes</span>
 							</li>
 							<li class="flex items-start gap-3">
-								<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--book-open"></span>
+								<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--book-open"
+								></span>
 								<span>Access the documentation to get started</span>
 							</li>
 						</ul>

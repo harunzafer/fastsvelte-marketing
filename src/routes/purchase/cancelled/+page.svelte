@@ -5,21 +5,25 @@
 
 <div class="flex min-h-screen items-center justify-center bg-base-100 px-4">
 	<div class="w-full max-w-md">
-		<div class="card bg-base-100 shadow-xl border border-base-300">
+		<div class="card border border-base-300 bg-base-100 shadow-xl">
 			<div class="card-body text-center">
 				<span class="mx-auto mb-4 iconify size-16 text-warning lucide--x-circle"></span>
 				<h1 class="mb-4 card-title justify-center text-3xl">Purchase Cancelled</h1>
-				<p class="mb-6 text-lg text-base-content/70">Your purchase was cancelled. No payment has been processed.</p>
+				<p class="mb-6 text-lg text-base-content/70">
+					Your purchase was cancelled. No payment has been processed.
+				</p>
 
-				<div class="mb-6 rounded-lg bg-warning/10 border border-warning/20 p-6 text-left">
+				<div class="mb-6 rounded-lg border border-warning/20 bg-warning/10 p-6 text-left">
 					<h2 class="mb-3 text-lg font-semibold text-warning">Still interested in FastSvelte?</h2>
 					<ul class="space-y-3">
 						<li class="flex items-start gap-3">
-							<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--help-circle"></span>
+							<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--help-circle"
+							></span>
 							<span>Check our FAQ for common questions</span>
 						</li>
 						<li class="flex items-start gap-3">
-							<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--book-open"></span>
+							<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--book-open"
+							></span>
 							<span>View the documentation to learn more</span>
 						</li>
 						<li class="flex items-start gap-3">

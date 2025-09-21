@@ -5,7 +5,10 @@ export interface GitHubUser {
 	email: string;
 }
 
-export async function grantRepositoryAccess(githubUsername: string, customerEmail: string): Promise<boolean> {
+export async function grantRepositoryAccess(
+	githubUsername: string,
+	customerEmail: string
+): Promise<boolean> {
 	try {
 		const response = await fetch(
 			`https://api.github.com/repos/${github.repoOwner}/${github.repoName}/collaborators/${githubUsername}`,

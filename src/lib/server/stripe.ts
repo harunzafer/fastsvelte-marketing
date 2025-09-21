@@ -14,7 +14,9 @@ export interface CheckoutSessionData {
 	cancelUrl?: string;
 }
 
-export async function createCheckoutSession(data: CheckoutSessionData): Promise<Stripe.Checkout.Session> {
+export async function createCheckoutSession(
+	data: CheckoutSessionData
+): Promise<Stripe.Checkout.Session> {
 	const { plan, successUrl, cancelUrl } = data;
 
 	let priceId: string;
@@ -63,7 +65,10 @@ export async function createCheckoutSession(data: CheckoutSessionData): Promise<
 	});
 }
 
-export async function constructWebhookEvent(body: string, signature: string): Promise<Stripe.Event> {
+export async function constructWebhookEvent(
+	body: string,
+	signature: string
+): Promise<Stripe.Event> {
 	return stripe.webhooks.constructEvent(body, signature, stripeConfig.webhookSecret);
 }
 
@@ -72,7 +77,7 @@ export async function retrieveSession(sessionId: string): Promise<Stripe.Checkou
 }
 
 export async function retrieveCustomer(customerId: string): Promise<Stripe.Customer> {
-	return await stripe.customers.retrieve(customerId) as Stripe.Customer;
+	return (await stripe.customers.retrieve(customerId)) as Stripe.Customer;
 }
 
 export interface CheckoutSessionCompleted {
@@ -83,13 +88,14 @@ export interface CheckoutSessionCompleted {
 	githubUsername: string;
 }
 
-export function extractCheckoutSessionData(session: Stripe.Checkout.Session): CheckoutSessionCompleted | null {
+export function extractCheckoutSessionData(
+	session: Stripe.Checkout.Session
+): CheckoutSessionCompleted | null {
 	const customerEmail = session.customer_details?.email;
 	const customerName = session.customer_details?.name;
 	const plan = session.metadata?.plan;
-	const githubUsername = session.custom_fields?.find(
-		(field) => field.key === 'github_username'
-	)?.text?.value;
+	const githubUsername = session.custom_fields?.find((field) => field.key === 'github_username')
+		?.text?.value;
 
 	if (!customerEmail || !plan || !githubUsername) {
 		return null;

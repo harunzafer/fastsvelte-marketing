@@ -37,4 +37,3 @@ export const sendgrid = {
 	apiKey: SENDGRID_API_KEY,
 	fromEmail: SENDGRID_FROM_EMAIL
 } as const;
-
