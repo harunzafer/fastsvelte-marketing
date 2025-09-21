@@ -12,8 +12,7 @@
 
 				<p class="mt-3 text-base-content/80 max-sm:text-sm">
 					Ship production-ready SaaS applications with FastAPI + SvelteKit. Complete authentication,
-					payments, multi-tenancy, and admin dashboards - deploy anywhere with zero vendor
-					lock-in.
+					payments, multi-tenancy, and admin dashboards - deploy anywhere with zero vendor lock-in.
 				</p>
 				<div class="mt-6 flex items-center gap-2.5 xl:mt-16">
 					<a
@@ -24,7 +23,12 @@
 					>
 						<span class="iconify size-4 lucide--github"></span>
 					</a>
-					<a class="btn btn-circle btn-sm" href="https://docs.fastsvelte.dev" target="_blank" aria-label="Visit FastSvelte documentation">
+					<a
+						class="btn btn-circle btn-sm"
+						href="https://docs.fastsvelte.dev"
+						target="_blank"
+						aria-label="Visit FastSvelte documentation"
+					>
 						<span class="iconify size-3.5 lucide--book-open"></span>
 					</a>
 				</div>

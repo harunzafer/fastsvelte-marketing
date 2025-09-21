@@ -12,23 +12,41 @@
 
 <svelte:head>
 	<title>FastSvelte - Fullstack SaaS Starter Kit | FastAPI + SvelteKit</title>
-	<meta name="description" content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today." />
-	<meta name="keywords" content="FastAPI, SvelteKit, SaaS starter kit, fullstack, TypeScript, Python, PostgreSQL, admin dashboard" />
+	<meta
+		name="description"
+		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today."
+	/>
+	<meta
+		name="keywords"
+		content="FastAPI, SvelteKit, SaaS starter kit, fullstack, TypeScript, Python, PostgreSQL, admin dashboard"
+	/>
 	<meta name="author" content="FastSvelte" />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://fastsvelte.dev/" />
-	<meta property="og:title" content="FastSvelte - Fullstack SaaS Starter Kit | FastAPI + SvelteKit" />
-	<meta property="og:description" content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today." />
+	<meta
+		property="og:title"
+		content="FastSvelte - Fullstack SaaS Starter Kit | FastAPI + SvelteKit"
+	/>
+	<meta
+		property="og:description"
+		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today."
+	/>
 	<meta property="og:image" content="https://fastsvelte.dev/images/og-image.png" />
 	<meta property="og:site_name" content="FastSvelte" />
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://fastsvelte.dev/" />
-	<meta property="twitter:title" content="FastSvelte - Fullstack SaaS Starter Kit | FastAPI + SvelteKit" />
-	<meta property="twitter:description" content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today." />
+	<meta
+		property="twitter:title"
+		content="FastSvelte - Fullstack SaaS Starter Kit | FastAPI + SvelteKit"
+	/>
+	<meta
+		property="twitter:description"
+		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today."
+	/>
 	<meta property="twitter:image" content="https://fastsvelte.dev/images/og-image.png" />
 
 	<!-- Additional SEO meta tags -->

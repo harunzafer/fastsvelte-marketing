@@ -1,8 +1,7 @@
 import { loadStripe } from '@stripe/stripe-js';
-import { env } from '$env/dynamic/public';
+import { STRIPE_PUBLISHABLE_KEY } from '$lib/config';
 
-// Temporary workaround for Vercel build issue - use dynamic import
-export const stripe = loadStripe(env.PUBLIC_STRIPE_PUBLISHABLE_KEY || 'pk_test_placeholder');
+export const stripe = loadStripe(STRIPE_PUBLISHABLE_KEY);
 
 export async function createCheckoutSession(plan: 'solo' | 'developer' | 'team') {
 	try {

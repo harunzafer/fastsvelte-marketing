@@ -40,38 +40,40 @@
 				</div>
 			</div>
 		{:else}
-			<div class="card bg-success text-success-content">
+			<div class="card border border-base-300 bg-base-100 shadow-xl">
 				<div class="card-body text-center">
-					<span class="mx-auto mb-4 iconify size-16 lucide--check-circle"></span>
+					<span class="mx-auto mb-4 iconify size-16 text-success lucide--check-circle"></span>
 					<h1 class="mb-4 card-title justify-center text-3xl">Purchase Successful!</h1>
-					<p class="mb-6 text-lg">
+					<p class="mb-6 text-lg text-base-content/70">
 						Thank you for purchasing FastSvelte! Your payment has been processed successfully.
 					</p>
 
-					<div class="mb-6 rounded-lg bg-success-content/10 p-6 text-left">
-						<h2 class="mb-3 text-lg font-semibold">What happens next?</h2>
-						<ul class="space-y-2">
-							<li class="flex items-start gap-2">
-								<span class="mt-0.5 iconify size-5 flex-shrink-0 lucide--mail"></span>
+					<div class="mb-6 rounded-lg border border-success/20 bg-success/10 p-6 text-left">
+						<h2 class="mb-3 text-lg font-semibold text-success">What happens next?</h2>
+						<ul class="space-y-3">
+							<li class="flex items-start gap-3">
+								<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--mail"></span>
 								<span>You'll receive a confirmation email shortly</span>
 							</li>
-							<li class="flex items-start gap-2">
-								<span class="mt-0.5 iconify size-5 flex-shrink-0 lucide--github"></span>
+							<li class="flex items-start gap-3">
+								<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--github"
+								></span>
 								<span>GitHub repository access will be granted within 15 minutes</span>
 							</li>
-							<li class="flex items-start gap-2">
-								<span class="mt-0.5 iconify size-5 flex-shrink-0 lucide--book-open"></span>
+							<li class="flex items-start gap-3">
+								<span class="mt-0.5 iconify size-5 flex-shrink-0 text-primary lucide--book-open"
+								></span>
 								<span>Access the documentation to get started</span>
 							</li>
 						</ul>
 					</div>
 
-					<div class="card-actions justify-center space-x-4">
-						<a href="https://docs.fastsvelte.dev" target="_blank" class="btn btn-outline">
+					<div class="card-actions justify-center gap-4">
+						<a href="https://docs.fastsvelte.dev" target="_blank" class="btn btn-primary">
 							<span class="iconify size-4 lucide--external-link"></span>
 							Documentation
 						</a>
-						<a href="/" class="btn btn-ghost">
+						<a href="/" class="btn btn-outline">
 							<span class="iconify size-4 lucide--home"></span>
 							Back Home
 						</a>

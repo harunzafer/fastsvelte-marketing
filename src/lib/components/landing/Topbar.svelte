@@ -78,8 +78,7 @@
 		<div class="inline-flex items-center gap-3">
 			<ThemeToggle class="btn btn-square border-transparent btn-ghost btn-sm" />
 			<a
-				href="https://daisyui.com/store/244268?aff=Db6q2"
-				target="_blank"
+				href="#pricing"
 				class="group/purchase btn relative gap-2 border-0 bg-linear-to-r from-primary to-secondary text-sm text-primary-content btn-sm max-sm:btn-square"
 			>
 				<span class="iconify size-4 lucide--shopping-cart"></span>

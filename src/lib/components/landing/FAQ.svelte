@@ -91,7 +91,7 @@
 				{#each faqs as faq, index}
 					<div class="border-b border-base-300">
 						<button
-							class="hover:bg-base-50 cursor-pointer p-4 font-medium sm:text-xl w-full text-left"
+							class="hover:bg-base-50 w-full cursor-pointer p-4 text-left font-medium sm:text-xl"
 							onclick={() => toggleAccordion(index)}
 							aria-expanded={activeIndex === index}
 							aria-controls="faq-content-{index}"
