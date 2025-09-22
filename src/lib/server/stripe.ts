@@ -47,6 +47,7 @@ export async function createCheckoutSession(
 		cancel_url: cancelUrl || `${APP_URL}/purchase/cancelled`,
 		customer_creation: 'always',
 		billing_address_collection: 'required',
+		allow_promotion_codes: true, // Enable coupon input
 		metadata: {
 			plan: plan,
 			product: 'fastsvelte'
