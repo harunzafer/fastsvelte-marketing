@@ -14,7 +14,7 @@
 	<title>FastSvelte - Fullstack SaaS Starter Kit | FastAPI + SvelteKit</title>
 	<meta
 		name="description"
-		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today."
+		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium admin theme. Start building your SaaS application today."
 	/>
 	<meta
 		name="keywords"
@@ -31,7 +31,7 @@
 	/>
 	<meta
 		property="og:description"
-		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today."
+		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium admin theme. Start building your SaaS application today."
 	/>
 	<meta property="og:image" content="https://fastsvelte.dev/images/og-image.png" />
 	<meta property="og:site_name" content="FastSvelte" />
@@ -45,7 +45,7 @@
 	/>
 	<meta
 		property="twitter:description"
-		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme. Start building your SaaS application today."
+		content="FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium admin theme. Start building your SaaS application today."
 	/>
 	<meta property="twitter:image" content="https://fastsvelte.dev/images/og-image.png" />
 
@@ -64,7 +64,7 @@
 			"name": "FastSvelte",
 			"applicationCategory": "DeveloperApplication",
 			"operatingSystem": "Cross-platform",
-			"description": "FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium Nexus-Svelte admin theme.",
+			"description": "FastSvelte is a comprehensive fullstack SaaS starter kit featuring FastAPI backend, SvelteKit frontend, PostgreSQL database, and premium admin theme.",
 			"url": "https://fastsvelte.dev",
 			"author": {
 				"@type": "Organization",

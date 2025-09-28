@@ -31,7 +31,7 @@
 		fullscreen: false
 	};
 
-	const localStorageKey = '__NEXUS_CONFIG_v3.0__';
+	const localStorageKey = 'FASTSVELTE_CONFIG_V1';
 	const storedValue = browser && window.localStorage.getItem(localStorageKey);
 	const initialValue = storedValue ? (JSON.parse(storedValue) as IConfig) : defaultConfig;
 	const config = writable<IConfig>(initialValue);
