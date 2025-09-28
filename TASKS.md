@@ -1,157 +1,34 @@
 # FastSvelte Marketing - Tasks
 
-This file tracks pending tasks and features for the FastSvelte marketing website.
+## Improve Documentation
 
-## 🛒 Stripe Integration & Purchase System
+- [ ] Go through and improve all documentation
+- [ ] Add more detailed deployment instructions
 
-**Goal**: Implement a complete purchase system where customers can buy FastSvelte and automatically receive access to the private GitHub repository.
+## Marketing Efforts
 
-**Repository to Grant Access**: https://github.com/harunzafer/fastsvelte
+- [ ] Create a marketing plan
+- [ ] Add a blog section
+- [ ] Create a youtube channel for tutorials and updates
+- [ ] Add a demo application
+- [ ] Improve SEO. What else can be done?
+- [ ] Google Ads campaign and other paid marketing strategies
 
-### Tasks
 
-- [x] **Add Stripe integration to marketing site for FastSvelte purchases**
-  - [x] Set up Stripe payment forms
-  - [x] Configure pricing and product details
-  - [x] Add payment processing UI components
+## 📈 Analytics & Tracking
 
-- [x] **Create purchase flow that grants GitHub repo access to buyer's email**
-  - [x] Design checkout experience
-  - [x] Collect customer email during purchase
-  - [x] Implement purchase confirmation flow
-
-- [x] **Set up backend API endpoints for payment processing**
-  - [x] Create SvelteKit server routes for Stripe webhooks
-  - [x] Handle payment success/failure events
-  - [x] Implement secure payment validation
-
-- [x] **Implement GitHub API integration for repo access management**
-  - [x] Set up GitHub API credentials and permissions
-  - [x] Create functions to add collaborators to private repo
-  - [x] Handle GitHub API rate limits and errors
-
-- [x] **Create purchase confirmation and access delivery system**
-  - [x] Send confirmation emails after successful purchase
-  - [x] Notify customers about GitHub repo access
-  - [x] Provide clear instructions for accessing FastSvelte
-
-- [x] **Update marketing site CTAs to link to purchase flow**
-  - [x] Replace current CTAs with purchase buttons
-  - [x] Update pricing section with actual Stripe checkout
-  - [x] Ensure consistent messaging across all components
-
-### Technical Requirements
-
-- **Payment Processing**: Stripe integration with webhook validation
-- **Email Service**: Automated confirmation and instruction emails
-- **GitHub Integration**: Automated repository access management
-- **Security**: Secure handling of payment data and API keys
-- **User Experience**: Seamless purchase-to-access flow
-
-### Success Criteria
-
-- Customers can purchase FastSvelte directly from the marketing site
-- Payment processing is secure and reliable
-- GitHub repository access is granted automatically upon payment
-- Customers receive clear instructions and confirmation emails
-- The entire process is seamless and professional
-
-## 🎨 Content & Branding Updates
-
-**Goal**: Replace all boilerplate content with authentic FastSvelte branding, messaging, and visuals.
+- [ ] What else can be tracked? We have vercel analytiscs. Do we need more?
+- [ ] We need some kind of A/B testing for pricing page and other important pages.
+  - Discount vs no discount
 
 ### Tasks
 
-- [ ] **Create FastSvelte logo and branding assets**
-  - Design professional logo for light and dark themes
-  - Create favicon and various logo sizes
-  - Establish brand colors and visual identity
-  - Generate logo files in SVG and PNG formats
-
-- [x] **Update all website copy and messaging**
-  - [x] Replace hero section with FastSvelte-specific messaging
-  - [x] Update feature descriptions to highlight actual FastSvelte benefits
-  - [x] Rewrite testimonials with realistic customer feedback
-  - [x] Update FAQ section with FastSvelte-specific questions
-  - [x] Customize call-to-action text throughout the site
-
-- [ ] **Replace placeholder images with actual FastSvelte screenshots**
-  - Take high-quality screenshots of FastSvelte dashboard
-  - Capture images of different FastSvelte components and features
-  - Replace hero carousel images with actual product demos
-  - Update showcase section with real FastSvelte application views
-  - Ensure all images are optimized for web delivery
-
-- [x] **Update technical content and feature lists**
-  - [x] Highlight FastAPI + SvelteKit + PostgreSQL stack
-  - [x] Showcase Nexus-Svelte premium theme inclusion
-  - [x] Feature dependency injection and repository patterns
-  - [x] Emphasize session-based authentication system
-  - [x] Include information about Sqitch database migrations
-
-- [x] **Customize footer and contact information**
-  - [x] Add proper contact details and social links
-  - [x] Update copyright information
-  - [x] Link to actual FastSvelte documentation
-  - [ ] Include relevant legal pages (privacy, terms)
-
-### Content Guidelines
-
-- **Tone**: Professional, developer-focused, clear and concise
-- **Audience**: Full-stack developers building SaaS applications
-- **Value Proposition**: Complete, production-ready SaaS starter kit
-- **Key Benefits**: Time savings, best practices, premium theme, full-stack solution
-
-## 📈 SEO & Analytics
-
-**Goal**: Optimize the marketing site for search engines and track performance metrics.
-
-### Tasks
-
-- [ ] **Implement SEO optimization**
-  - Add proper meta tags, titles, and descriptions
-  - Create sitemap.xml and robots.txt
-  - Implement structured data markup
-  - Optimize page loading speed
-  - Add Open Graph and Twitter Card meta tags
-
-- [ ] **Set up analytics and tracking**
-  - Install Google Analytics or alternative
-  - Add conversion tracking for purchases
-  - Implement heatmap tracking (optional)
-  - Set up performance monitoring
-
-## 🔒 Legal & Compliance
-
-**Goal**: Ensure proper legal compliance for selling software products.
-
-### Tasks
-
-- [ ] **Create legal pages**
-  - Privacy Policy (especially for EU users)
-  - Terms of Service for software sales
-  - Refund/Return Policy
-  - Cookie Policy if using tracking
-
-- [ ] **GDPR and compliance considerations**
-  - Cookie consent banner if needed
-  - Data processing transparency
-  - User data handling policies
-
-## 🚀 Performance & Production
-
-**Goal**: Optimize the site for production deployment.
-
-### Tasks
-
-- [ ] **Production deployment setup**
-  - Configure hosting for fastsvelte.dev
-  - Set up SSL certificates
-  - Configure CDN for static assets
-  - Set up environment variables for production
-
-- [ ] **Performance optimization**
-  - Image optimization and compression
-  - Bundle size optimization
-  - Implement proper caching headers
-  - Add loading states and error handling
+- [ ] **Implement comprehensive testing**
+  - [ ] Create canary tests for critical paths
+  - [ ] Add E2E tests for purchase flow
+  
+- [ ] **Set up monitoring**
+  - [ ] Error tracking (Sentry or similar)
+  - [ ] Uptime monitoring
+  - [ ] Performance monitoring
+  - [ ] Purchase success rate tracking
