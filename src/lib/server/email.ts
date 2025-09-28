@@ -86,7 +86,7 @@ export async function sendPurchaseConfirmation(data: PurchaseConfirmationData): 
 				<li>Authentication & user management</li>
 				<li>Stripe payment integration</li>
 				<li>Multi-tenant architecture</li>
-				<li>Premium Nexus-Svelte admin dashboard</li>
+				<li>Premium admin dashboard</li>
 				<li>Complete deployment guides</li>
 			</ul>
 
@@ -129,7 +129,7 @@ FastSvelte includes:
 • Authentication & user management
 • Stripe payment integration
 • Multi-tenant architecture
-• Premium Nexus-Svelte admin dashboard
+• Premium admin dashboard
 • Complete deployment guides
 
 If you have any questions or need help getting started, feel free to reach out to us.
